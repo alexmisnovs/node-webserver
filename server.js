@@ -44,9 +44,10 @@ hbs.registerHelper('getCurrentYear', () => {
     return new Date().getFullYear();
 });
 
+
 hbs.registerHelper('screamIt', (text) => {
     // make sure that value should be a string otherwise return input without modification
-    if(typeof text === String){
+    if(typeof text === 'string'){
          return text.toUpperCase();
     }else{
         return text;
